@@ -297,6 +297,10 @@ def CheckIfComElmEnabled(oFrm, iprint: bool):
             print("Given composite model is disabled.")
         return(False)
 
+
+#main functions
+
+
 def EnableComElm(FrmName: str,Grid):
     '''This function enables the composite model that already exists in the given Grid.'''
 
@@ -334,8 +338,6 @@ def DisableComElm(FrmName: str,Grid):
     else:
         print("Composite model doesn't exists in grid "+Grid.loc_name)
     return(oFrm)
-
-#main functions
 
 def CreateOOSDet(FrmName: str, TypFolder, grid, sAngles):
     '''This function creates the Frame for the out-of-step detector'''
